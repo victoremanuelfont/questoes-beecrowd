@@ -1,51 +1,49 @@
 package problema1049;
-
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        
-        
-        String palavra1 = sc.nextLine();
-        String palavra2 = sc.nextLine();
-        String palavra3 = sc.nextLine();
+        String nome01 = sc.nextLine();
+        String nome02 = sc.nextLine();
+        String nome03 = sc.nextLine();
 
-        if (palavra1.equals("vertebrado")) {
-            if (palavra2.equals("ave")) {
-                if (palavra3.equals("carnivoro")) {
+        if (nome01.equals("vertebrado")) {
+            if (nome02.equals("ave")) {
+                if (nome03.equals("carnivoro")) {
                     System.out.println("aguia");
-                } else if (palavra3.equals("onivoro")) {
+                } else if (nome03.equals("onivoro")) {
                     System.out.println("pomba");
                 }
 
-            } else if (palavra2.equals("mamifero")) {
-                if (palavra3.equals("onivoro")) {
+            } else if (nome02.equals("mamifero")) {
+                if (nome03.equals("onivoro")) {
                     System.out.println("homem");
-                } else if (palavra3.equals("herbivoro")) {
+                } else if (nome03.equals("herbivoro")) {
                     System.out.println("vaca");
                 }
+
             }
 
-        } else if (palavra1.equals("invertebrado")) {
-            if (palavra2.equals("inseto")) {
-                if (palavra3.equals("hematofago")) {
+        } else if (nome01.equals("invertebrado")) {
+            if (nome02.equals("inseto")) {
+                if (nome03.equals("hematofago")) {
                     System.out.println("pulga");
-                } else if (palavra3.equals("herbivoro")) {
+                } else if (nome03.equals("herbivoro")) {
                     System.out.println("lagarta");
                 }
 
-            } else if (palavra2.equals("anelideo")) {
-                if (palavra3.equals("hematofago")) {
+            } else if (nome02.equals("anelideo")) {
+                if (nome03.equals("hematofago")) {
                     System.out.println("sanguessuga");
-                } else if (palavra3.equals("onivoro")) {
+                } else if (nome03.equals("onivoro")) {
                     System.out.println("minhoca");
                 }
             }
+
+
         }
-        
-        System.out.print("\n");
-        sc.close();
+
     }
 }
